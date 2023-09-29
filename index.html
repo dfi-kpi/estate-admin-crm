@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Лабораторна робота 3</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="./src/main.css">
+    </head>
+    <body>
+        <header class="mb-4">
+            <div class="px-3 py-2 text-bg-dark border-bottom">
+                <div class="container">
+                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                        <a href="#" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                            <img src="./src/img/logo_x64.png" alt="logo"/>
+                        </a>
+            
+                        <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                            <li>
+                                <a href="#" class="nav-link text-secondary">
+                                    <div class="icon-text-wrapper">
+                                        <i class="bi bi-house-door"></i>
+                                        <span>Головна</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link text-white">
+                                    <div class="icon-text-wrapper">
+                                        <i class="bi bi-speedometer2"></i>
+                                        <span>Панель управління</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link text-white">
+                                    <div class="icon-text-wrapper">
+                                        <i class="bi bi-table"></i>
+                                        <span>Замовлення</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link text-white">
+                                    <div class="icon-text-wrapper">
+                                        <i class="bi bi-grid"></i>
+                                        <span>Нерухомість</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link text-white">
+                                    <div class="icon-text-wrapper">
+                                        <i class="bi bi-person-circle"></i>
+                                        <span>Клієнти</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="px-3 py-2 border-bottom mb-3">
+                <div class="container d-flex flex-wrap justify-content-center">
+                        <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
+                            <input type="search" class="form-control" placeholder="Search..." aria-label="Search" spellcheck="false" data-ms-editor="true">
+                        </form>
+            
+                        <div class="text-end">
+                            <button type="button" class="btn btn-light text-dark me-2">Авторизація</button>
+                            <button type="button" class="btn btn-primary">Реєстрація</button>
+                        </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="loadingio-spinner-bars-tsev48yigpj text-center">
+                        <div class="ldio-ycibxgb3u0a">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="bd-placeholder-img w-100" src="https://media.giphy.com/media/26FL2Oym0WRQLWuzK/giphy.gif" alt="Slide 1">
+                        <div class="container">
+                            <div class="carousel-caption text-start text-white">
+                                <h1>Example headline.</h1>
+                                <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+                                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="bd-placeholder-img w-100" src="https://media.giphy.com/media/gHVm7Z4wHPUBMnHaUd/giphy.gif" alt="Slide 2">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1>Another example headline.</h1>
+                                <p>Some representative placeholder content for the second slide of the carousel.</p>
+                                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="bd-placeholder-img w-100" src="https://media.giphy.com/media/WuHPf2O2N3FldteB0C/giphy.gif" alt="Slide 3">
+                        <div class="container">
+                            <div class="carousel-caption text-end text-white">
+                                <h1>One more for good measure.</h1>
+                                <p>Some representative placeholder content for the third slide of this carousel.</p>
+                                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div class="container marketing">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img class="bd-placeholder-img rounded-circle w-50" src="https://media.giphy.com/media/bzKxypf8ywBoP7CGoj/giphy.gif" alt="Placeholder">
+                        <h2 class="fw-normal">Heading</h2>
+                        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+                        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img class="bd-placeholder-img rounded-circle w-50" src="https://media.giphy.com/media/AwkdWhmdklVYyaCU95/giphy.gif" alt="Placeholder">
+                        <h2 class="fw-normal">Heading</h2>
+                        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+                        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img class="bd-placeholder-img rounded-circle w-50" src="https://media.giphy.com/media/LthbVInkBeCSP68wjc/giphy.gif" alt="Placeholder">
+                        <h2 class="fw-normal">Heading</h2>
+                        <p>And lastly this, the third column of representative placeholder content.</p>
+                        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                    </div>
+                </div>
+        
+                <hr class="featurette-divider">
+        
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
+                        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="https://media.giphy.com/media/bgT142FWjRwV4hWsvX/giphy.gif" alt="Placeholder: 500x500">
+                    </div>
+                </div>
+        
+                <hr class="featurette-divider">
+        
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
+                        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="https://media.giphy.com/media/zVRYxjLcmNK9a4vfUf/giphy.gif" alt="Placeholder: 500x500">
+                    </div>
+                </div>
+        
+                <hr class="featurette-divider">
+        
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
+                        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="https://media.giphy.com/media/3o6ZtlfqQ36WuCFgAM/giphy.gif" alt="Placeholder: 500x500">
+                    </div>
+                </div>
+        
+                <hr class="featurette-divider">
+        
+            </div>
+        </main>
+        <footer class="border-top mt-4">
+            <div class="container d-flex flex-wrap justify-content-between align-items-center py-3">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="#" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                        <img src="./src/img/logo_x64.png" alt="logo"/>
+                    </a>
+                    <span class="mb-3 mb-md-0 text-body-secondary">Copyright: &copy; Super-ultra-mega evil Company &trade;, Burg</span>
+                </div>
+            
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex ">
+                    <li class="ms-3"><a class="text-body-secondary" href="tel:номер-телефону"><i class="fs-4 mx-2 bi bi-telephone-outbound"></i></a></li>
+                    <li class="ms-3"><a class="text-body-secondary" href="tg://посилання-на-чат-в-Telegram"><i class="fs-4 mx-2 bi bi-telegram"></i></a></li>
+                    <li class="ms-3"><a class="text-body-secondary" href="mailto:адреса-електронної-пошти"><i class="fs-4 mx-2 bi bi-envelope-at"></i></a></li>
+                    <li class="ms-3"><a class="text-body-secondary" href="https://wa.me/номер-телефону"><i class="fs-4 mx-2 bi bi-whatsapp"></i></a></li>
+                </ul>
+            </div>
+          </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>
