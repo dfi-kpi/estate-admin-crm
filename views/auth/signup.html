@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../src/main.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+        <title>Реєстрація</title>
+        <style>
+            html, body {
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body class="d-flex align-items-center py-4 bg-body-tertiary">
+        <main class="form-signin w-100 m-auto">
+            <form action="./signup_res.html">
+                <h1 class="h3 mb-3 fw-normal text-center">Форма реєстрації</h1>
+            
+                <div class="form-floating">
+                    <input type="text" class="form-control" placeholder="" position="top" required>
+                    <label for="floatingInput">Прізвище</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" class="form-control" placeholder="" position="middle" required>
+                    <label for="floatingInput">Ім'я</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" class="form-control" placeholder="" position="middle">
+                    <label for="floatingInput">По батькові</label>
+                </div>
+                <div class="form-floating">
+                    <input type="date" class="form-control" position="middle">
+                    <label for="floatingInput">Дата народження</label>
+                </div>
+                <div class="form-floating">
+                    <input type="email" class="form-control" placeholder="" position="middle" required>
+                    <label for="floatingInput">Пошта</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" placeholder="" position="bottom" required>
+                    <label for="floatingPassword">Пароль</label>
+                </div>
+                <button class="btn btn-success w-100 py-2" type="submit">Зареєструватися</button>
+                <button class="btn btn-danger w-100 py-2 mt-2" type="reset">Скинути</button>
+            </form>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>

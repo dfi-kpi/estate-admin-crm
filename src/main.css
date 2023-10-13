@@ -1,5 +1,5 @@
 .svg-white {
-    fill: white; /* Задайте кольорове заповнення на білий */
+    fill: white;
 }
 
 .icon-text-wrapper {
@@ -85,12 +85,6 @@
  /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
-
-body {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    color: rgb(var(--bs-tertiary-color-rgb));
-  }
   
   
   /* CUSTOMIZE THE CAROUSEL
@@ -164,3 +158,77 @@ body {
       margin-top: 7rem;
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+  .form-signin {
+    margin: 0px auto;
+    max-width: 330px;
+    padding: 1rem;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[position="top"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[position="middle"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-signin input[position="bottom"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+
+
+
+
+
+
+
+
+
+.my_form {
+  width: 700px;
+  margin: 20px auto;
+  text-align: left;
+}
+.form-group {
+  margin-top: 5px;
+}
+
+
+
+
+th {
+  font-style: italic;
+  font-weight: bold;
+}
+.icon-col a {
+  display: none;
+}
+.table tr:hover .icon-col a {
+  display: inline;
+  justify-content: space-evenly;
+}
