@@ -13,50 +13,137 @@
             }
         </style>
     </head>
-    <body class="d-flex align-items-center py-4 bg-body-tertiary">
-        <main class="form-signin w-100 m-auto">
-            <form action="./signup_res.html">
-                <h1 class="h3 mb-3 fw-normal text-center">Форма реєстрації</h1>
-            
-                <div class="form-floating">
-                    <input type="text" class="form-control" placeholder="" position="top" required>
-                    <label for="floatingInput">Прізвище</label>
+    <body class="align-items-center py-4 bg-body-tertiary w-100 m-auto">
+        <main>
+            <div class="form-signin">
+                <form>
+                    <h1 class="h3 mb-3 fw-normal text-center">Форма реєстрації</h1>
+                    <div class="form-group">
+                        <label>Прізвище</label>
+                        <input id="lastName" type="text" class="form-control" placeholder="" required>
+                        <small id="lastName-error" class="error-message"></small>
+                    </div>
+                    <div class="form-group">
+                        <label>Ім'я</label>
+                        <input id="firstName" type="text" class="form-control" placeholder="" required>
+                        <small id="firstName-error" class="error-message"></small>
+                    </div>
+                    <div class="form-group">
+                        <label>По батькові</label>
+                        <input id="middleName" type="text" class="form-control" placeholder="" required>
+                        <small id="middleName-error" class="error-message"></small>
+                    </div>
+                    <div class="form-group">
+                        <label>Дата народження</label>
+                        <input id="birth" type="date" class="form-control" required>
+                        <small id="birth-error" class="error-message"></small>
+                    </div>
+                    <div class="form-group">
+                        <label>Пошта</label>
+                        <input id="email" type="email" class="form-control" placeholder="" required>
+                        <small id="email-error" class="error-message"></small>
+                    </div>
+                    <div class="form-group">
+                        <label>Стать</label>
+                        <div class="justify-content-between" style="display: flex;">
+                            <div class="form-check">
+                                <input id="male" name="sex" type="radio" class="form-check-input" required>
+                                <label class="form-check-label" for="male">Чоловік</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="female" name="sex" type="radio" class="form-check-input" required>
+                                <label class="form-check-label" for="female">Жінка</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="unknown" name="sex" type="radio" class="form-check-input" checked required>
+                                <label class="form-check-label" for="unknown">Не скажу</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Номер телефону</label>
+                        <input id="phone" type="text" data-inputmask="'mask': '+38(099)999-99-99'" placeholder=" " class="form-control" required>
+                        <small id="phone-error" class="error-message"></small>
+                    </div>
+                    <div class="form-group">
+                        <label>Фото профілю</label>
+                        <input id="file" type="file" class="form-control" placeholder="" required>
+                        <small id="file-error" class="error-message"></small>
+                    </div>
+                    <div class="form-group">
+                        <label>Група</label>
+                        <select name="groups" id="groups" class="form-control" placeholder="" required>
+                            <option value="dl51">ДЛ-51</option>
+                            <option value="mf15">МФ-15</option>
+                            <option value="pa81">ПА-81</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Пароль</label>
+                        <input id="password" type="password" class="form-control" placeholder="" required>
+                        <small id="password-error" class="error-message"></small>
+                    </div>
+                    <button class="btn btn-success w-100 py-2 mt-5" id="addUser" type="submit">Зареєструватися</button>
+                    <button class="btn btn-danger w-100 py-2 mt-2" type="reset">Скинути</button>
+                </form>
+            </div>
+            <div class="w-75 m-auto mt-5 pb-5">
+                <div class="text-center m-3 mx-5">
+                    <button id="btnDel" class="btn btn-md btn-danger">Видалити</button>
+                    <button id="btnDup" class="btn btn-md btn-light">Продублювати</button>
                 </div>
-                <div class="form-floating">
-                    <input type="text" class="form-control" placeholder="" position="middle" required>
-                    <label for="floatingInput">Ім'я</label>
-                </div>
-                <div class="form-floating">
-                    <input type="text" class="form-control" placeholder="" position="middle">
-                    <label for="floatingInput">По батькові</label>
-                </div>
-                <div class="form-floating">
-                    <input type="date" class="form-control" position="middle">
-                    <label for="floatingInput">Дата народження</label>
-                </div>
-                <div class="form-floating">
-                    <input type="email" class="form-control" placeholder="" position="middle" required>
-                    <label for="floatingInput">Пошта</label>
-                </div>
-                <div class="form-floating">
-                    <input type="file" class="form-control" placeholder="" position="middle">
-                </div>
-                <div class="form-floating">
-                    <select name="groups" id="groups" class="form-control" placeholder="" position="middle">
-                        <option value="dl51">ДЛ-51</option>
-                        <option value="mf15">МФ-15</option>
-                        <option value="pa81">ПА-81</option>
-                      </select>
-                    <label for="groups">Група</label>
-                </div>
-                <div class="form-floating">
-                    <input type="password" class="form-control" placeholder="" position="bottom" required>
-                    <label for="floatingPassword">Пароль</label>
-                </div>
-                <button class="btn btn-success w-100 py-2" type="submit">Зареєструватися</button>
-                <button class="btn btn-danger w-100 py-2 mt-2" type="reset">Скинути</button>
-            </form>
+                <table class="table table-striped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Ім'я</th>
+                            <th>Прізвище</th>
+                            <th>По батькові</th>
+                            <th>Дата народження</th>
+                            <th>Пошта</th>
+                            <th>Стать</th>
+                            <th>Номер телефону</th>
+                            <th>Фото профілю</th>
+                            <th>Група</th>
+                            <th>Пароль</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-data">
+                        <!-- PLACEHOLDER -->
+                        <tr>
+                            <td style="width: 5px;"><input type="checkbox"></td>
+                            <td>Abc</td>
+                            <td>Abc</td>
+                            <td>Abc</td>
+                            <td>0444-04-04</td>
+                            <td>super@mail.io</td>
+                            <td>Жінка</td>
+                            <td>+38(042)352-34-23</td>
+                            <td>C:\fakepath\marieke-douma-gloomwood.jpg</td>
+                            <td>mf15</td>
+                            <td>Kyter133!</td>
+                        </tr>
+                    
+                        <tr>
+                            <td style="width: 5px;"><input type="checkbox"></td>
+                            <td>Ivan</td>
+                            <td>Prep</td>
+                            <td>Vital</td>
+                            <td>2005-04-14</td>
+                            <td>sdfsdfsdfsdfsfsfd@dfdsf.rr</td>
+                            <td>Чоловік</td>
+                            <td>+38(055)555-55-55</td>
+                            <td>C:\fakepath\marieke-douma-gloomwood.jpg</td>
+                            <td>pa81</td>
+                            <td>Kyter133!</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.3/jquery.inputmask.bundle.min.js"></script>
+        <script src="../../src/main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 </html>

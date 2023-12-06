@@ -237,3 +237,15 @@ th {
   display: inline;
   justify-content: space-evenly;
 }
+
+
+
+
+
+
+
+
+.error-message {
+  color: crimson; 
+  font-weight: bold;
+}
